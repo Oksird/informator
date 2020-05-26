@@ -1,0 +1,119 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>COVID INFO</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <a class="navbar-brand" href="#">covId-INF</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+<h1>
+    <center>
+        Welcome to the COVID-19 INFO CENTER!
+    </center>
+</h1>
+<h2>
+    Please,choose your country below!
+</h2>
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Choose country
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="?country=Ukraine">Ukraine</a>
+        <a class="dropdown-item" href="?country=Afghanistan">Afghanistan</a>
+        <a class="dropdown-item" href="?country=Albania">Albania</a>
+        <a class="dropdown-item" href="?country=Algeria">Algeria</a>
+        <a class="dropdown-item" href="?country=Andorra">Andorra</a>
+        <a class="dropdown-item" href="?country=Angola">Angola</a>
+        <a class="dropdown-item" href="?country=Antigua-and-Barbuda">Antigua-and-Barbuda</a>
+        <a class="dropdown-item" href="?country=Argentina">Argentina</a>
+        <a class="dropdown-item" href="?country=Aruba">Aruba</a>
+        <a class="dropdown-item" href="?country=Australia">Australia</a>
+        <a class="dropdown-item" href="?country=Austria">Austria</a>
+        <a class="dropdown-item" href="?country=Azerbaijan">Azerbaijan</a>
+        <a class="dropdown-item" href="?country=Bahamas">Bahamas</a>
+        <a class="dropdown-item" href="?country=Bahrain">Bahrain</a>
+        <a class="dropdown-item" href="?country=Bangladesh">Bangladesh</a>
+        <a class="dropdown-item" href="?country=Barbados">Barbados</a>
+        <a class="dropdown-item" href="?country=Belarus">Belarus</a>
+        <a class="dropdown-item" href="?country=Belgium">Belgium</a>
+        <a class="dropdown-item" href="?country=Benin">Benin</a>
+        <a class="dropdown-item" href="?country=Bermuda">Bermuda</a>
+        <a class="dropdown-item" href="?country=Bhutan">Bhutan</a>
+        <a class="dropdown-item" href="?country=Bolivia">Bolivia</a>
+        <a class="dropdown-item" href="?country=Bosnia-and-Herzegovina">Bosnia-and-Herzegovina</a>
+        <a class="dropdown-item" href="?country=Brazil">Brazil</a>
+        <a class="dropdown-item" href="?country=Brunei">Brunei</a>
+        <a class="dropdown-item" href="?country=Burkina-Faso">Burkina-Faso</a>
+        <a class="dropdown-item" href="?country=Cabo-Verde">Cabo-Verde</a>
+        <a class="dropdown-item" href="?country=Cambodia">Cambodia</a>
+        <a class="dropdown-item" href="?country=Cameroon">Cameroon</a>
+        <a class="dropdown-item" href="?country=Canada">Canada</a>
+        <a class="dropdown-item" href="?country=CAR">CAR</a>
+        <a class="dropdown-item" href="?country=Cayman-Islands">Cayman-Islands</a>
+        <a class="dropdown-item" href="?country=Chad">Chad</a>
+        <a class="dropdown-item" href="?country=Channel-Islands">Channel-Islands</a>
+        <a class="dropdown-item" href="?country=Chile">Chile</a>
+        <a class="dropdown-item" href="?country=China">China</a>
+        <a class="dropdown-item" href="?country=Colombia">Colombia</a>
+        <a class="dropdown-item" href="?country=Congo">Congo</a>
+        <a class="dropdown-item" href="?country=Costa-Rica">Costa-Rica</a>
+        <a class="dropdown-item" href="?country=Croatia">Croatia</a>
+        <a class="dropdown-item" href="?country=Cuba">Cuba</a>
+        <a class="dropdown-item" href="?country=Cyprus">Cyprus</a>
+        <a class="dropdown-item" href="?country=Czechia">Czechia</a>
+        <a class="dropdown-item" href="?country=Diamond-Princess-">Diamond-Princess-</a>
+        <a class="dropdown-item" href="?country=Dominican-Republic">Dominican-Republic</a>
+        <a class="dropdown-item" href="?country=DRC">DRC</a>
+        <a class="dropdown-item" href="?country=Ecuador">Ecuador</a>
+        <a class="dropdown-item" href="?country=Egypt">Egypt</a>
+        <a class="dropdown-item" href="?country=El-Salvador">El-Salvador</a>
+        <a class="dropdown-item" href="?country=Equatorial-Guinea">Equatorial-Guinea</a>
+        <a class="dropdown-item" href="?country=Eritrea">Eritrea</a>
+        <a class="dropdown-item" href="?country=Eswatini">Eswatini</a>
+        <a class="dropdown-item" href="?country=Ethiopia">Ethiopia</a>
+        <a class="dropdown-item" href="?country=Faeroe-Islands">Faeroe-Islands</a>
+        <a class="dropdown-item" href="?country=Fiji">Fiji</a>
+        <a class="dropdown-item" href="?country=Finland">Finland</a>
+
+    </div>
+</div>
+
+<h4><p th:text="${country} + ' '+ statistics" /></h4>
+<p th:text="'Total  ' + ${total} + ' ' + people" />
+<p th:text="'Recovered  ' + ${recovered} + ' ' + people" />
+<p th:text="'Dead  ' + ${death} + ' ' +people" />
+</div>
+</body>
+</html>
